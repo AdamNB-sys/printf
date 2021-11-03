@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdarg.h>
+#include <stdlib.h>
 
 /**
  * _printf - prints string to stdout
