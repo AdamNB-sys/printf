@@ -25,6 +25,12 @@ int _printf(const char *format, ...)
 			i++;
 			switch (format[i])
 			{
+			        case 'd':
+					holder += ;
+					break;
+			        case 'i':
+					holder += ;
+					break;
 				case 'c':
 					holder += caseC(va_arg(args, int));
 					break;
