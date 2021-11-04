@@ -40,7 +40,6 @@ int caseC(char c)
 int caseStr(char *sp)
 {
 	int i;
-
 	for (i = 0; sp[i] != '\0'; i++)
 	{
 		write(1, &sp[i], 1);
@@ -80,27 +79,7 @@ char caseUnknown(char a)
  *
  * Return: int
  */
-int caseInt(int n)
+/* int caseInt(int n)
 {
-	unsigned int length = 0, modulo = 1;
 
-	if (n < 0)
-	{
-		_putchar('-');
-		n = n * -1;
-		length++;
-	}
-
-	while ((n / modulo) >= 10)
-	{
-		modulo = modulo * 10;
-	}
-	while (modulo >= 1)
-	{
-		_putchar((n / modulo) + '0');
-		n = n % modulo;
-		modulo = modulo / 10;
-		length++;
-	}
-	return (length);
-}
+} */
