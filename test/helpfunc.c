@@ -1,5 +1,6 @@
 #include "main.h"
 #include <unistd.h>
+#include <stdlib.h>
 
 /**
  * _putchar - writes the character c to stdout
@@ -45,7 +46,7 @@ int caseStr(char *sp)
 		write(1, &sp[i], 1);
 	}
 	write(1, '\0', 1);
-	
+
 	return (i);
 }
 
@@ -58,5 +59,5 @@ int caseStr(char *sp)
 int casePer(void)
 {
 	_putchar('%');
-	return(1);
+	return (1);
 }
