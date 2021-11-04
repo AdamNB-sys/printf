@@ -25,7 +25,7 @@ int caseC(char c)
 {
 	if (!c)
 		return (0);
-	_putchar(c);
+        write(1, &c, 1);
 	return (1);
 }
 
@@ -40,7 +40,6 @@ int caseC(char c)
 int caseStr(char *sp)
 {
 	int i;
-
 	for (i = 0; sp[i] != '\0'; i++)
 	{
 		write(1, &sp[i], 1);
