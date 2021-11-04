@@ -39,7 +39,6 @@ int caseC(char c)
 int caseStr(char *sp)
 {
 	int i;
-	printf("This is a test");
 	for (i = 0; sp[i] != '\0'; i++)
 	{
 		write(1, &sp[i], 1);
