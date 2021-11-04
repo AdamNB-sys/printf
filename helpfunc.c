@@ -62,6 +62,19 @@ int casePer(void)
 }
 
 /**
+ * caseUnknown - prints unknown
+ * @a: argument
+ *
+ * Return: int
+ */
+char caseUnknown(char a)
+{
+	_putchar('%');
+	_putchar(a);
+	return(2);
+}
+
+/**
  * caseInt - prints integer
  *
  * Return: int

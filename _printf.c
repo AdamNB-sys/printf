@@ -40,6 +40,9 @@ int _printf(const char *format, ...)
 				case '%':
 					holder += casePer();
 					break;
+				default:
+					holder += caseUnknown(format[i]);
+					break;
 			}
 		}
 		else

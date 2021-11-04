@@ -25,6 +25,6 @@ int _putchar(char c);
 int casePer(void);
 int caseStr(char *sp);
 int caseC(char c);
-
+char caseUnknown(char a);
 
 #endif /* MAIN_H */
