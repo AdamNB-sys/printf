@@ -12,11 +12,13 @@
  * @choice: specifier of function
  * @func: the function to return
  */
-typedef struct bag
+
+/** typedef struct bag
 {
 	char *choice;
 	int (*func)(va_list args);
 } grabbag;
+*/
 
 int _printf(const char *format, ...);
 int _putchar(char c);

@@ -12,20 +12,20 @@ int _printf(const char *format, ...)
 {
 	va_list args;
 
-	int i = 0;
+	unsigned int i = 0;
 	int holder = 0;
-	char form;
+	/*char form; */
 
 	va_start(args, format);
 
-	while (format[i])
+	while (format[i] != '\0')
 	{
-		form = format[i];
+		/* form = format[i]; */
 		/* if form is a percent */
-		if (form == 37)
+		if (format[i] == 37)
 		{
 			i++;
-			switch(form)
+			switch(format[i])
 			{
 				case 'c':
 					holder += caseC(va_arg(args, int));
@@ -40,7 +40,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			_putchar(form);
+			_putchar(format[i]);
 			holder++;
 		}
 		i++;
