@@ -66,7 +66,7 @@ int casePer(void)
  *
  * Return: int
  */
-int caseInt(int n)
+/* int caseInt(int n)
 {
 
-}
+} */
