@@ -60,3 +60,13 @@ int casePer(void)
 	_putchar('%');
 	return (1);
 }
+
+/**
+ * caseInt - prints integer
+ *
+ * Return: int
+ */
+int caseInt(int n)
+{
+
+}
